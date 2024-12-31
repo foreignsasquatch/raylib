@@ -1,0 +1,9 @@
+{
+  "name": "raylib",
+  "license": "MIT",
+  "version": "11.12.7",
+  "classPath": "source/",
+  "releasenote": "",
+  "contributors": ["ForeignSasquatch", "logo4poop"],
+  "dependencies": {}
+}
