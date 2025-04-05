@@ -957,7 +957,7 @@ extern enum abstract Keys(Int) to Int from Int {
 // Mouse buttons
 
 @:include("raylib.h")
-extern enum abstract MouseButton(Int) {
+extern enum abstract MouseButton(Int) to Int from Int {
     @:native("MOUSE_BUTTON_LEFT")
     static var LEFT:Int;
     @:native("MOUSE_BUTTON_RIGHT")
@@ -1344,7 +1344,7 @@ extern enum abstract NPatchLayout(UInt) {
     var THREE_PATCH_HORIZONTAL:UInt;
 }
 
-#if wasm
+#if emscripten
 @:buildXml("<include name='${haxelib:raylib}/source/Web.xml'/>")
 #else
 @:buildXml("<include name='${haxelib:raylib}/source/Build.xml'/>")
